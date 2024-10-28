@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaibhav Mishra - Portfolio</title>
+    <style>
+        /* Background Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0b1a40; /* Dark blue night sky */
+            color: #e0e2ed;
+            background-image: radial-gradient(circle, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+                              radial-gradient(circle, rgba(255, 255, 255, 0.15) 1px, transparent 1px);
+            background-size: 20px 20px, 80px 80px;
+            background-position: 0 0, 40px 40px;
+        }
+        /* Header Styling */
+        header {
+            background-color: #1e2952;
+            color: #f9f5d7; /* Soft white */
+            padding: 1.5em;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        /* Container and Section Styling */
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: auto;
+            padding: 2em 0;
+        }
+        h1, h2 {
+            color: #f9f5d7;
+        }
+        .section {
+            margin: 2em 0;
+        }
+        /* Card Styling */
+        .contact, .skills, .certifications, .honors, .publications, .experience, .education {
+            padding: 1em;
+            background-color: #1a233b; /* Slightly lighter for card contrast */
+            margin: 1em 0;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            padding: 0.3em 0;
+        }
+        .job-title {
+            font-weight: bold;
+            color: #f9d57c; /* Soft yellow for emphasis */
+        }
+        .job-details {
+            font-size: 0.9em;
+            color: #c0c7d6;
+        }
+        /* Link Styling */
+        a {
+            color: #ffd700; /* Starry night yellow */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .hand {
+            font-size: 100px;
+            color: #1e90ff; /* Medium dark blue hand color */
+            animation: wave 1.2s infinite ease-in-out;
+            transform-origin: 70% 70%; /* Set pivot point for waving */
+            display: inline-block;
+            float: right;
+        }
+        @keyframes wave {
+            0%, 100% { transform: rotate(0deg); }
+            50% { transform: rotate(20deg); }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+    <div class="hand">👋</div>
+        <h1>Hi, I'm Vaibhav Mishra</h1>
+        <p>Software Engineer</p>
+    </header>
+
+    <div class="container">
+        <section class="section contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:mishra.vaibhav6@gmail.com">mishra.vaibhav6@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/vaibhavm-0baaa2b9">www.linkedin.com/in/vaibhavm-0baaa2b9</a></p>
+            <p>PhoneNo:<a>+91 8542098418 </a></p>
+        </section>
+
+        <section class="section summary">
+            <h2>Summary</h2>
+            <p>With 4+ years of experience in the software industry , I have excelled in development
+and team leadership roles
+. My focus has centred on Microservices and Web/SAAS development , spanning
+diverse sectors such as Calling , SIP ,VOIP , Cloud and Networking
+. I have experience designing microservice application from scratch using
+(SpringBoot+Kafka) CI/CD and scaling in Kubernetes
+.My adeptness in project management and agile methodologies ensures timely and
+quality deliverables .</p>
+        </section>
+
+        <section class="section experience">
+            <h2>Experience</h2>
+            <div class="job">
+                <p class="job-title">Software Engineer III - Cisco</p>
+                <p class="job-details">October 2024 - Present | Bengaluru, Karnataka, India</p>
+                <ul>
+                    <li>Collaborated with Product owners, DevOps, and security teams to align technical goals with business objectives.</li>
+                    <li>Architected scalable, fault-tolerant data streaming applications with Spring Boot and Kafka.</li>
+                    <li>Managed authentication and orchestration for AWS Kubernetes, OpenSearch, and IAM.</li>
+                    <li>Developed dashboards and monitoring tools for data performance.</li>
+                    <li>Leverage DevOps practices to maintain high application availability and
+rapid deployment cycles, focusing on reliability and scalability of the metrics
+infrastructure</li>
+                </ul>
+                
+                <p class="job-title">Software Engineer II - Cisco</p>
+                <p class="job-details">December 2021 - October 2024 | Chennai, TN, India</p>
+                <ul>
+                    <li>Design and development of Data Streaming Application based on SpringBoot
++Kafka</li>
+                    <li>Handling auth and orchestration of AWS Kube + OpenSearch and IAM with
+pipeline and delivery</li>
+                    <li>Monitoring and handling data in Elastic Stack /OpenSearch</li>
+                    <li>CI/CD Devops handling for metrics application</li>
+                </ul>
+                
+                <p class="job-title">Software Engineer - Cisco</p>
+                <p class="job-details">August 2020 - November 2021 | Chennai, TN, India</p>
+                <ul>
+                    <li>Complete design and development of Automation of a portal using
+Cypress,Docker and Jenkins</li>
+                    <li>Publishing and presentation of visually appealing dashboards in Grafana .
+- Worked on Angular for development of a WAP .(Angular 11)</li>
+                    <li>Implemented Webex SDK for mocking calling ,messaging and screen-sharing
+in a small one page application for a Hackathon.</li>
+                </ul>
+                
+                <p class="job-title">Software Engineering Intern - Cisco</p>
+                <p class="job-details">January 2020 - June 2020 | Chennai, TN, India</p>
+                <ul>
+                    <li>Developed a python library (GraphReport) and published it that jenkins logs
+and metrics and created an html page and complete report for your metrics
+data</li>
+                    <li>Worked on MongoDB backend for a small application for my team</li>
+                    <li>Learned about various and worked on the tech stack like
+Jenkins,Dockers,Calling (MPP) ,and was put under the learning architecture of
+networking and trained on SIP,VoIP.</li>
+                </ul>
+                
+                
+                <p class="job-title">Software Engineer Intern- Gmetri</p>
+                <p class="job-details">December 2018 - January 2019  | Bengaluru, Karnataka, India</p>
+                <ul>
+                    <li>Worked on Hapi.js ,Graphql , Swagger UI for creating backend and APIs for
+VR/AR based products for the organisation</li>
+                </ul>
+                
+                
+                
+                <p class="job-title">Data Analyst Intern - EISystems</p>
+                <p class="job-details">June 2018 - July 2018 | IIT-BHU, Varanasi, India</p>
+                <ul>
+                    <li>Worked on ML libraries to do churn modelling of a dataset for a bank within the tenure and helped in design on face detection module for the org.</li>
+                </ul>
+            </div>
+            <!-- Other jobs omitted for brevity -->
+        </section>
+
+        <section class="section skills">
+            <h2>Skills</h2>
+            
+        </section>
+
+ 
+
+        <section class="section honors">
+            <h2>Honors & Awards</h2>
+            <ul>
+                <li>WxCalling 2021 Automation Hackathon
+                <p class="job-details">We solved the existing problem by fixing two processes(Api Failures & Password
+Rotation) and automating it using Cypress and Docker</p></li><p>
+               
+                <li>Datathon 2024</li>
+                 <p class="job-details">
+                Built a RAG pipeline for a chatbot for Webex using LLM models to help engineer debug any 2am fix </p>
+                 <li>Security - Brown Belt Cisco</li><p>
+                <li>Kubernetes Solution -Qwiklabs</li>
+            </ul>
+        </section>
+
+        <section class="section publications">
+            <h2>Publications</h2>
+            <ul>
+                <li>An Optimal Medicine Identification Application Based on Deep Neural Network</li>
+                                <li>Submitted a patent in CPOL for handling cloud traffic of calling in emergency scenario</li>
+            </ul>
+        </section>
+
+        <section class="section education">
+        <h2>Volunteer</h2>
+        <p>Organiser of Hackference India -Devrel </p>
+        <p>Volunteer @ GDG Chennai,FnPlus,PyconIndia ,TFUG Chennai</p>
+        <p>Mentor @ MLH(Major League Hacking)
+
+            <h2>Education</h2>
+            <p>SRM University - Bachelor of Technology (BTech) in Computer Science and Engineering</p>
+            - Organiser of College events(TEXUS) and multiple Hackathons
+            <p>Sunbeam - High School (2003 - 2015)</p>
+        </section>
+    </div>
+
+</body>
+</html>
