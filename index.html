@@ -38,13 +38,19 @@
         .section {
             margin: 2em 0;
         }
-        /* Card Styling */
+         /* Card Styling */
         .contact, .skills, .certifications, .honors, .publications, .experience, .education {
             padding: 1em;
             background-color: #1a233b; /* Slightly lighter for card contrast */
             margin: 1em 0;
             border-radius: 8px;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .contact {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* Pushes image to the right */
         }
         ul {
             list-style: none;
@@ -70,7 +76,7 @@
             text-decoration: underline;
         }
         .hand {
-            font-size: 100px;
+            font-size: 80px;
             color: #1e90ff; /* Medium dark blue hand color */
             animation: wave 1.2s infinite ease-in-out;
             transform-origin: 70% 70%; /* Set pivot point for waving */
@@ -81,23 +87,58 @@
             0%, 100% { transform: rotate(0deg); }
             50% { transform: rotate(20deg); }
         }
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap; /* Allows images to wrap to the next line */
+            gap: 15px; /* Adds spacing between images */
+            justify-content: center; /* Centers the items */
+            margin-top: 15px; /* Space between heading and images */
+        }
+
+        .skills-container .skill {
+            background-color: black; /* Light gray background */
+            padding: 10px; /* Padding around the image */
+            border-radius: 8px; /* Optional rounded corners */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+        }
+
+         .contact {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* Pushes image to the right */
+        }
+
+        .skills-container img {
+            width: 80px; /* Set a width for each image */
+            height: 70px; /* Keeps the aspect ratio */
+        }
+
+        /* Optional media query for larger screens */
+        @media (min-width: 768px) {
+            .skills-container img {
+                width: 100px; /* Increase image size for larger screens */
+            }
+        }
     </style>
 </head>
 <body>
 
     <header>
     <div class="hand">👋</div>
-        <h1>Hi, I'm Vaibhav </h1>
+        <h1>Hi, I'm Vaibhav</h1>
         <p>Software Engineer</p>
     </header>
 
     <div class="container">
-        <section class="section contact">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:mishra.vaibhav6@gmail.com">mishra.vaibhav6@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/vaibhavm-0baaa2b9">www.linkedin.com/in/vaibhavm-0baaa2b9</a></p>
-            <p>PhoneNo:<a>+91 8542098418 </a></p>
-        </section>
+      <section class="section contact">
+    <div class="contact-info">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:mishra.vaibhav6@gmail.com">mishra.vaibhav6@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/vaibhavm-0baaa2b9">www.linkedin.com/in/vaibhavm-0baaa2b9</a></p>
+        <p>Phone: <a href="tel:+918542098418">+91 8542098418</a></p>
+    </div>
+    <img src="photo.jpg" height="80px",width="80px",alt="Contact Image">
+</section>
 
         <section class="section summary">
             <h2>Summary</h2>
@@ -181,7 +222,92 @@ VR/AR based products for the organisation</li>
 
         <section class="section skills">
             <h2>Skills</h2>
-            
+            <div class="skills-container">
+        <div class="skill">
+            <img src="aws.png" alt="Skill 1">
+        </div>
+        <div class="skill">
+            <img src="confluence.png" alt="Skill 2">
+        </div>
+        <div class="skill">
+            <img src="jira.png" alt="Skill 3">
+        </div>
+        <div class="skill">
+            <img src="kafka.png" alt="Skill 4">
+        </div>
+        <div class="skill">
+            <img src="elasticsearch.png" alt="Skill 5">
+        </div>
+        <div class="skill">
+            <img src="opensearch.png" alt="Skill 6">
+        </div>
+        <div class="skill">
+            <img src="docker.png" alt="Skill 5">
+        </div>
+        <div class="skill">
+            <img src="flink.png" alt="Skill 5">
+        </div>
+        <div class="skill">
+            <img src="github.png" alt="Skill 5">
+        </div>
+        <div class="skill">
+            <img src="graphqk.png" alt="Skill 5">
+        </div>
+        <div class="skill">
+            <img src="iceberg.png" alt="Skill 5">
+        </div>
+        <div class="skill">
+            <img src="intellij.png" alt="Skill 5">
+        </div>
+        <div class="skill">
+            <img src="java.png" alt="Skill 5">
+        </div>
+        <div class="skill">
+            <img src="kubernetes.png" alt="Skill 5">
+        </div>
+        <div class="skill">
+            <img src="nginx.png" alt="Skill 5">
+        </div>
+        <div class="skill">
+            <img src="spring.png" alt="Skill 5">
+        </div>
+        <div class="skill">
+            <img src="vscode.png" alt="Skill 5">
+        </div>
+        <div class="skill">
+            <img src="python.png" alt="Skill 5">
+        </div>
+        <div class="skill">
+            <img src="prometheus.png" alt="Skill 5">
+        </div>
+        <div class="skill">
+            <img src="postman.png" alt="Skill 5">
+        </div>
+        <div class="skill">
+            <img src="jenkins.png" alt="Skill 5">
+        </div>
+        <div class="skill">
+            <img src="html.png" alt="Skill 5">
+        </div>
+        <div class="skill">
+            <img src="wireshark.png" alt="Skill 5">
+        </div>
+        <div class="skill">
+            <img src="grafana.png" alt="Skill 5">
+        </div>
+
+
+    <div class="skill">
+            <img src="notepad.png" alt="Skill 5">
+        </div>
+        <div class="skill">
+            <img src="restful.png" alt="Skill 5">
+        </div>
+        <div class="skill">
+            <img src="helmchart.png" alt="Skill 5">
+        </div>
+        <!-- Add more images as needed -->
+    </div>
         </section>
 
  
