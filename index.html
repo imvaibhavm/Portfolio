@@ -3,350 +3,1377 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vaibhav Mishra - Portfolio</title>
+    <meta name="description" content="Vaibhav Mishra - Sr. Software Engineer at Five9 | Enterprise Architect | AI/LLM Expert | 5+ Years in Microservices, Cloud, and DevOps">
+    <meta name="keywords" content="Vaibhav Mishra, Software Engineer, Cloud Architect, DevOps, Kubernetes, Microservices, Java, Spring Boot, AI, LLM, RAG, GCP, AWS, Enterprise Security">
+    <meta name="author" content="Vaibhav Mishra">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta property="og:title" content="Vaibhav Mishra - Sr. Software Engineer & Tech Speaker">
+    <meta property="og:description" content="Enterprise-level architect with expertise in microservices, cloud infrastructure, AI/LLM systems, and DevOps. Currently at Five9.">
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://vaibhav-portfolio.vercel.app/">
+    <meta property="og:image" content="https://vaibhav-portfolio.vercel.app/photo.jpg">
+    <meta property="og:site_name" content="Vaibhav Mishra Portfolio">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Vaibhav Mishra - Sr. Software Engineer & Tech Speaker">
+    <meta name="twitter:description" content="Enterprise-level architect with expertise in microservices, cloud infrastructure, AI/LLM systems, and DevOps.">
+    <meta name="twitter:image" content="https://vaibhav-portfolio.vercel.app/photo.jpg">
+    <meta name="theme-color" content="#00d4ff">
+    <link rel="canonical" href="https://vaibhav-portfolio.vercel.app/">
+    <link rel="icon" type="image/jpeg" href="photo.jpg">
+    <link rel="apple-touch-icon" href="photo.jpg">
+    <title>Vaibhav Mishra - Sr. Software Engineer, Cloud Architect & AI/LLM Expert</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
     <style>
-        /* Background Styling */
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
-            background-color: #0b1a40; /* Dark blue night sky */
-            color: #e0e2ed;
-            background-image: radial-gradient(circle, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
-                              radial-gradient(circle, rgba(255, 255, 255, 0.15) 1px, transparent 1px);
-            background-size: 20px 20px, 80px 80px;
-            background-position: 0 0, 40px 40px;
+            box-sizing: border-box;
         }
-        /* Header Styling */
-        header {
-            background-color: #1e2952;
-            color: #f9f5d7; /* Soft white */
-            padding: 1.5em;
-            text-align: center;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+
+        :root {
+            --primary: #00d4ff;
+            --primary-dark: #0099cc;
+            --secondary: #ff006e;
+            --accent: #8000ff;
+            --background: #0a0e27;
+            --surface: #1a1f3a;
+            --surface-light: #252d48;
+            --text: #e4e6eb;
+            --text-muted: #a0a5b8;
+            --border: #2d3748;
+            --success: #00d084;
         }
-        /* Container and Section Styling */
-        .container {
-            width: 90%;
-            max-width: 1000px;
-            margin: auto;
-            padding: 2em 0;
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, var(--background) 0%, #0f1630 50%, var(--background) 100%);
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
         }
-        h1, h2 {
-            color: #f9f5d7;
+
+        /* Animated Background */
+        body::before {
+            content: '';
+            position: fixed;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(0, 212, 255, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+            top: 10%;
+            left: 10%;
+            animation: float 20s ease-in-out infinite;
+            z-index: -2;
         }
-        .section {
-            margin: 2em 0;
+
+        body::after {
+            content: '';
+            position: fixed;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(128, 0, 255, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+            bottom: -5%;
+            right: 5%;
+            animation: float 25s ease-in-out infinite reverse;
+            z-index: -2;
         }
-         /* Card Styling */
-        .contact, .skills, .certifications, .honors, .publications, .experience, .education {
-            padding: 1em;
-            background-color: #1a233b; /* Slightly lighter for card contrast */
-            margin: 1em 0;
-            border-radius: 8px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) translateX(0px); }
+            50% { transform: translateY(-30px) translateX(30px); }
         }
-        
-        .contact {
+
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes glow {
+            0%, 100% { text-shadow: 0 0 20px rgba(0, 212, 255, 0.5); }
+            50% { text-shadow: 0 0 30px rgba(0, 212, 255, 0.8); }
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(10, 14, 39, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+            z-index: 1000;
+            animation: slideInDown 0.6s ease-out;
+        }
+
+        @keyframes slideInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-100%);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
             display: flex;
+            justify-content: space-between;
             align-items: center;
-            justify-content: space-between; /* Pushes image to the right */
         }
-        ul {
+
+        .nav-logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .nav-logo:hover {
+            filter: brightness(1.2);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
             list-style: none;
-            padding: 0;
         }
-        ul li {
-            padding: 0.3em 0;
-        }
-        .job-title {
-            font-weight: bold;
-            color: #f9d57c; /* Soft yellow for emphasis */
-        }
-        .job-details {
-            font-size: 0.9em;
-            color: #c0c7d6;
-        }
-        /* Link Styling */
-        a {
-            color: #ffd700; /* Starry night yellow */
+
+        .nav-links a {
+            color: var(--text-muted);
             text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .hand {
-            font-size: 80px;
-            color: #1e90ff; /* Medium dark blue hand color */
-            animation: wave 1.2s infinite ease-in-out;
-            transform-origin: 70% 70%; /* Set pivot point for waving */
-            display: inline-block;
-            float: right;
-        }
-        @keyframes wave {
-            0%, 100% { transform: rotate(0deg); }
-            50% { transform: rotate(20deg); }
-        }
-        .skills-container {
-            display: flex;
-            flex-wrap: wrap; /* Allows images to wrap to the next line */
-            gap: 15px; /* Adds spacing between images */
-            justify-content: center; /* Centers the items */
-            margin-top: 15px; /* Space between heading and images */
+            transition: all 0.3s ease;
+            position: relative;
+            font-weight: 500;
         }
 
-        .skills-container .skill {
-            background-color: black; /* Light gray background */
-            padding: 10px; /* Padding around the image */
-            border-radius: 8px; /* Optional rounded corners */
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            transition: width 0.3s ease;
+            border-radius: 2px;
         }
 
-         .contact {
+        .nav-links a:hover::after {
+            width: 100%;
+            box-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
             display: flex;
             align-items: center;
-            justify-content: space-between; /* Pushes image to the right */
+            justify-content: center;
+            padding-top: 80px;
+            text-align: center;
+            animation: fadeIn 0.8s ease-out;
         }
 
-        .skills-container img {
-            width: 80px; /* Set a width for each image */
-            height: 70px; /* Keeps the aspect ratio */
+        .hero-content {
+            animation: slideInUp 0.8s ease-out 0.2s backwards;
         }
 
-        /* Optional media query for larger screens */
-        @media (min-width: 768px) {
-            .skills-container img {
-                width: 100px; /* Increase image size for larger screens */
+        .hero-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 3px solid var(--primary);
+            box-shadow: 0 0 40px rgba(0, 212, 255, 0.3), inset 0 0 40px rgba(0, 212, 255, 0.1);
+            margin: 0 auto 2rem;
+            animation: slideInUp 0.8s ease-out 0.3s backwards;
+            overflow: hidden;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: glow 3s ease-in-out infinite;
+            letter-spacing: -1px;
+        }
+
+        .hero-title {
+            font-size: 1.8rem;
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            animation: slideInUp 0.8s ease-out 0.4s backwards;
+        }
+
+        .hero-subtitle {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+            animation: slideInUp 0.8s ease-out 0.5s backwards;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: slideInUp 0.8s ease-out 0.6s backwards;
+        }
+
+        .btn {
+            padding: 0.75rem 2.5rem;
+            border: 2px solid;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            border-color: var(--primary);
+            color: var(--background);
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-primary:hover {
+            box-shadow: 0 0 40px rgba(0, 212, 255, 0.6), 0 0 20px rgba(128, 0, 255, 0.4);
+            transform: translateY(-3px);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            border-color: var(--primary);
+            color: var(--primary);
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(0, 212, 255, 0.15);
+            box-shadow: 0 0 30px rgba(0, 212, 255, 0.4);
+            transform: translateY(-3px);
+        }
+
+        /* Container */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Sections */
+        section {
+            padding: 6rem 0;
+            animation: slideInUp 0.8s ease-out backwards;
+        }
+
+        section:nth-child(2) { animation-delay: 0.1s; }
+        section:nth-child(3) { animation-delay: 0.2s; }
+        section:nth-child(4) { animation-delay: 0.3s; }
+
+        .section-title {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 3rem;
+            position: relative;
+            text-align: center;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -1.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            border-radius: 2px;
+        }
+
+        /* About Section */
+        .about {
+            background: linear-gradient(135deg, var(--surface) 0%, var(--surface-light) 100%);
+            border-radius: 20px;
+            padding: 4rem;
+            border: 1px solid var(--border);
+            animation: slideInUp 0.8s ease-out;
+        }
+
+        .about p {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Experience Timeline */
+        .experience-timeline {
+            position: relative;
+            padding: 2rem 0;
+        }
+
+        .experience-timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(180deg, var(--primary), var(--accent), transparent);
+        }
+
+        .experience-item {
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: linear-gradient(135deg, var(--surface) 0%, rgba(0, 212, 255, 0.03) 100%);
+            border-radius: 15px;
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--primary);
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .experience-item:hover {
+            border-left-color: var(--accent);
+            box-shadow: 0 10px 40px rgba(0, 212, 255, 0.15);
+            transform: translateY(-5px);
+        }
+
+        .experience-item::before {
+            content: '';
+            position: absolute;
+            left: calc(50% - 15px);
+            top: 2rem;
+            width: 30px;
+            height: 30px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            border-radius: 50%;
+            border: 3px solid var(--background);
+        }
+
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 1rem;
+        }
+
+        .experience-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .experience-date {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .experience-company {
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .experience-item ul {
+            list-style: none;
+            margin-top: 1.5rem;
+        }
+
+        .experience-item li {
+            color: var(--text-muted);
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .experience-item li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: bold;
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 1.5rem;
+            animation: slideInUp 0.8s ease-out;
+        }
+
+        .skill-card {
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.05), rgba(128, 0, 255, 0.05));
+            border: 1px solid var(--border);
+            border-radius: 15px;
+            padding: 1.5rem;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: blur(5px);
+        }
+
+        .skill-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(0, 212, 255, 0.2), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .skill-card:hover::before {
+            left: 100%;
+        }
+
+        .skill-card:hover {
+            border-color: var(--primary);
+            box-shadow: 0 0 30px rgba(0, 212, 255, 0.2);
+            transform: translateY(-10px);
+        }
+
+        .skill-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 1rem;
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(128, 0, 255, 0.1));
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .skill-icon img {
+            width: 90%;
+            height: 90%;
+            object-fit: contain;
+        }
+
+        .skill-icon.text-icon {
+            font-weight: 700;
+            font-size: 2rem;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .skill-name {
+            font-weight: 600;
+            color: var(--text);
+            font-size: 0.95rem;
+        }
+
+        /* Enhanced Skill Cards */
+        .skill-card:nth-child(1) { animation: slideInUp 0.6s ease-out 0.1s backwards; }
+        .skill-card:nth-child(2) { animation: slideInUp 0.6s ease-out 0.15s backwards; }
+        .skill-card:nth-child(3) { animation: slideInUp 0.6s ease-out 0.2s backwards; }
+        .skill-card:nth-child(4) { animation: slideInUp 0.6s ease-out 0.25s backwards; }
+        .skill-card:nth-child(5) { animation: slideInUp 0.6s ease-out 0.3s backwards; }
+        .skill-card:nth-child(6) { animation: slideInUp 0.6s ease-out 0.35s backwards; }
+        .skill-card:nth-child(7) { animation: slideInUp 0.6s ease-out 0.4s backwards; }
+        .skill-card:nth-child(8) { animation: slideInUp 0.6s ease-out 0.45s backwards; }
+        .skill-card:nth-child(9) { animation: slideInUp 0.6s ease-out 0.5s backwards; }
+        .skill-card:nth-child(10) { animation: slideInUp 0.6s ease-out 0.55s backwards; }
+
+        /* Certifications & Awards */
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .cert-card {
+            background: linear-gradient(135deg, var(--surface) 0%, var(--surface-light) 100%);
+            border: 1px solid var(--border);
+            border-radius: 15px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+        }
+
+        .cert-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(0, 212, 255, 0.1), transparent);
+            border-radius: 50%;
+            transform: translate(50%, -50%);
+        }
+
+        .cert-card:hover {
+            box-shadow: 0 10px 40px rgba(0, 212, 255, 0.15);
+            transform: translateY(-5px);
+            border-color: var(--primary);
+        }
+
+        .cert-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .cert-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .cert-description {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* Projects Section Styles */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .project-card {
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.08), rgba(128, 0, 255, 0.08));
+            border: 2px solid var(--border);
+            border-radius: 20px;
+            padding: 2.5rem;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--accent), var(--secondary));
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.4s ease;
+        }
+
+        .project-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .project-card:hover {
+            border-color: var(--primary);
+            box-shadow: 0 20px 60px rgba(0, 212, 255, 0.2);
+            transform: translateY(-10px);
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.12), rgba(128, 0, 255, 0.12));
+        }
+
+        .project-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-title {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .project-subtitle {
+            font-size: 0.9rem;
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .project-description {
+            color: var(--text-muted);
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .project-features {
+            list-style: none;
+            margin-bottom: 1.5rem;
+        }
+
+        .project-features li {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            padding: 0.4rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .project-features li::before {
+            content: '◆';
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-size: 0.7rem;
+        }
+
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .tech-tag {
+            background: rgba(0, 212, 255, 0.15);
+            color: var(--primary);
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .project-card:hover .tech-tag {
+            background: rgba(0, 212, 255, 0.25);
+            border-color: var(--primary);
+        }
+
+        .project-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            padding: 0.75rem 1.5rem;
+            border: 2px solid var(--primary);
+            border-radius: 50px;
+            text-align: center;
+        }
+
+        .project-link:hover {
+            background: rgba(0, 212, 255, 0.2);
+            transform: translateX(5px);
+            box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
+        }
+
+        /* AI Skills Highlight */
+        .ai-skills-highlight {
+            background: linear-gradient(135deg, rgba(128, 0, 255, 0.15), rgba(0, 212, 255, 0.1));
+            border: 2px solid var(--accent);
+            border-radius: 15px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .ai-skills-highlight h3 {
+            color: var(--accent);
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .ai-skills-highlight .skill-card {
+            display: inline-block;
+            margin: 0.5rem;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.05), rgba(128, 0, 255, 0.05));
+            border-radius: 20px;
+            padding: 4rem 2rem;
+            border: 1px solid var(--border);
+            text-align: center;
+        }
+
+        .contact-links {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .contact-link {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .contact-link:hover {
+            color: var(--accent);
+            transform: translateX(5px);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--surface);
+            border-top: 1px solid var(--border);
+            padding: 2rem;
+            text-align: center;
+            color: var(--text-muted);
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                gap: 1rem;
+                font-size: 0.9rem;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-title {
+                font-size: 1.3rem;
+            }
+
+            .experience-timeline::before {
+                left: 30px;
+            }
+
+            .experience-item::before {
+                left: 20px;
+            }
+
+            .experience-item {
+                margin-left: 80px;
+                border-left-width: 0;
+                border-top: 4px solid var(--primary);
+            }
+
+            .experience-item:hover {
+                border-top-color: var(--accent);
+            }
+
+            .skills-grid {
+                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+                gap: 1rem;
+            }
+
+            section {
+                padding: 3rem 0;
+            }
+
+            .about {
+                padding: 2rem;
             }
         }
     </style>
 </head>
 <body>
+    <!-- JSON-LD Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Vaibhav Mishra",
+        "url": "https://vaibhav-portfolio.vercel.app/",
+        "image": "https://vaibhav-portfolio.vercel.app/photo.jpg",
+        "jobTitle": "Senior Software Engineer",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Five9"
+        },
+        "alumniOf": {
+            "@type": "EducationalOrganization",
+            "name": "SRM University"
+        },
+        "sameAs": [
+            "https://www.linkedin.com/in/vaibhav-m-0baaa2b9",
+            "https://github.com/vaibhav-mishra"
+        ],
+        "knowsAbout": [
+            "Java",
+            "Spring Boot",
+            "Kubernetes",
+            "Microservices",
+            "Cloud Architecture",
+            "DevOps",
+            "AWS",
+            "Google Cloud Platform",
+            "Kafka",
+            "Docker",
+            "LLM",
+            "RAG",
+            "Artificial Intelligence",
+            "Enterprise Security",
+            "Audit Logging",
+            "Data Sovereignty"
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "Professional Inquiry",
+            "email": "mishra.vaibhav6@gmail.com",
+            "telephone": "+91-8542098418"
+        }
+    }
+    </script>
 
-    <header>
-    <div class="hand">👋</div>
-        <h1>Hi, I'm Vaibhav</h1>
-        <p>Sr. Software Engineer</p>
-    </header>
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Vaibhav Mishra - Portfolio",
+        "url": "https://vaibhav-portfolio.vercel.app/",
+        "description": "Portfolio of Vaibhav Mishra, Senior Software Engineer specializing in microservices, cloud architecture, and AI/LLM systems"
+    }
+    </script>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="nav-logo">VM</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <div class="container">
-      <section class="section contact">
-    <div class="contact-info">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:mishra.vaibhav6@gmail.com">mishra.vaibhav6@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/vaibhavm-0baaa2b9">www.linkedin.com/in/vaibhavm-0baaa2b9</a></p>
-        <p>Phone: <a href="tel:+918542098418">+91 8542098418</a></p>
-    </div>
-    <img src="photo.jpg" height="80px",width="80px",alt="Contact Image">
-</section>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-image">
+                <img src="photo.jpg" alt="Vaibhav Mishra - Senior Software Engineer">
+            </div>
+            <h1>Vaibhav Mishra</h1>
+            <div class="hero-title">Senior Software Engineer @ Five9</div>
+            <div class="hero-subtitle">Cloud Architect | AI/LLM Expert | Microservices Specialist | Technical Speaker</div>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                <a href="#projects" class="btn btn-secondary">View My Work</a>
+            </div>
+        </div>
+    </section>
 
-        <section class="section summary">
-            <h2>Summary</h2>
-            <p>With 4+ years of experience in the software industry , I have excelled in development
-and team leadership roles
-. My focus has centred on Microservices and Web/SAAS development , spanning
-diverse sectors such as Calling , SIP ,VOIP , Cloud and Networking
-. I have experience designing microservice application from scratch using
-(SpringBoot+Kafka) CI/CD and scaling in Kubernetes
-.My adeptness in project management and agile methodologies ensures timely and
-quality deliverables .</p>
-        </section>
+    <!-- About Section -->
+    <section id="about" class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about">
+            <p>
+                I'm a passionate Sr. Software Engineer with 5+ years of experience architecting and building scalable, fault-tolerant systems. Currently leading analytics data streaming pipelines at Five9, where I focus on delivering high-impact solutions for the telco industry.
+            </p>
+            <p>
+                My expertise spans microservices architecture, cloud infrastructure, data streaming platforms, and DevOps practices. I'm equally comfortable designing cloud solutions on GCP/AWS or diving deep into Kubernetes orchestration. When I'm not coding, you'll find me speaking at tech conferences, mentoring upcoming engineers, or building open-source tools.
+            </p>
+            <p>
+                I thrive in fast-paced environments where I can bridge the gap between product vision and technical excellence. My approach combines strong architectural foundations with pragmatic problem-solving and a deep commitment to code quality and team collaboration.
+            </p>
+        </div>
+    </section>
 
-        <section class="section experience">
-            <h2>Experience</h2>
-            <div class="job">
-                <p class="job-title">Software Engineer III - Cisco</p>
-                <p class="job-details">October 2024 - Present | Bengaluru, Karnataka, India</p>
+    <!-- Experience Section -->
+    <section id="experience" class="container">
+        <h2 class="section-title">Experience</h2>
+        <div class="experience-timeline">
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="experience-title">Senior Software Engineer</div>
+                        <div class="experience-company">Five9</div>
+                    </div>
+                    <div class="experience-date">Sep 2025 - Present</div>
+                </div>
+                <div class="experience-location">Bengaluru, India</div>
                 <ul>
-                    <li>Collaborated with Product owners, DevOps, and security teams to align technical goals with business objectives.</li>
-                    <li>Architected scalable, fault-tolerant data streaming applications with Spring Boot and Kafka.</li>
-                    <li>Managed authentication and orchestration for AWS Kubernetes, OpenSearch, and IAM.</li>
-                    <li>Developed dashboards and monitoring tools for data performance.</li>
-                    <li>Leverage DevOps practices to maintain high application availability and
-rapid deployment cycles, focusing on reliability and scalability of the metrics
-infrastructure</li>
-                </ul>
-                
-                <p class="job-title">Software Engineer II - Cisco</p>
-                <p class="job-details">December 2021 - October 2024 | Chennai, TN, India</p>
-                <ul>
-                    <li>Design and development of Data Streaming Application based on SpringBoot
-+Kafka</li>
-                    <li>Handling auth and orchestration of AWS Kube + OpenSearch and IAM with
-pipeline and delivery</li>
-                    <li>Monitoring and handling data in Elastic Stack /OpenSearch</li>
-                    <li>CI/CD Devops handling for metrics application</li>
-                </ul>
-                
-                <p class="job-title">Software Engineer - Cisco</p>
-                <p class="job-details">August 2020 - November 2021 | Chennai, TN, India</p>
-                <ul>
-                    <li>Complete design and development of Automation of a portal using
-Cypress,Docker and Jenkins</li>
-                    <li>Publishing and presentation of visually appealing dashboards in Grafana .
-- Worked on Angular for development of a WAP .(Angular 11)</li>
-                    <li>Implemented Webex SDK for mocking calling ,messaging and screen-sharing
-in a small one page application for a Hackathon.</li>
-                </ul>
-                
-                <p class="job-title">Software Engineering Intern - Cisco</p>
-                <p class="job-details">January 2020 - June 2020 | Chennai, TN, India</p>
-                <ul>
-                    <li>Developed a python library (GraphReport) and published it that jenkins logs
-and metrics and created an html page and complete report for your metrics
-data</li>
-                    <li>Worked on MongoDB backend for a small application for my team</li>
-                    <li>Learned about various and worked on the tech stack like
-Jenkins,Dockers,Calling (MPP) ,and was put under the learning architecture of
-networking and trained on SIP,VoIP.</li>
-                </ul>
-                
-                
-                <p class="job-title">Software Engineer Intern- Gmetri</p>
-                <p class="job-details">December 2018 - January 2019  | Bengaluru, Karnataka, India</p>
-                <ul>
-                    <li>Worked on Hapi.js ,Graphql , Swagger UI for creating backend and APIs for
-VR/AR based products for the organisation</li>
-                </ul>
-                
-                
-                
-                <p class="job-title">Data Analyst Intern - EISystems</p>
-                <p class="job-details">June 2018 - July 2018 | IIT-BHU, Varanasi, India</p>
-                <ul>
-                    <li>Worked on ML libraries to do churn modelling of a dataset for a bank within the tenure and helped in design on face detection module for the org.</li>
+                    <li>Architecting, designing and developing end-to-end microservices for analytics and telco data streaming platforms</li>
+                    <li>Handling and optimizing events with SLO targets &lt;10s for 1M events/hour</li>
+                    <li>Orchestrating cloud infrastructure (GCP) for scalable microservices deployment</li>
+                    <li>Setting up custom lab environments (Asterisk) for call flow management (SIP and RTP)</li>
+                    <li>Leading product initiatives for telco analytics data streaming pipeline</li>
                 </ul>
             </div>
-            <!-- Other jobs omitted for brevity -->
-        </section>
 
-        <section class="section skills">
-            <h2>Skills</h2>
-            <div class="skills-container">
-        <div class="skill">
-            <img src="aws.png" alt="Skill 1">
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="experience-title">Software Engineer III</div>
+                        <div class="experience-company">Cisco</div>
+                    </div>
+                    <div class="experience-date">Oct 2023 - Sep 2025</div>
+                </div>
+                <div class="experience-location">Bengaluru, India</div>
+                <ul>
+                    <li>Collaborated with Product owners, DevOps, and security teams to align technical goals</li>
+                    <li>Architected scalable, fault-tolerant data streaming applications with Spring Boot and Kafka</li>
+                    <li>Managed authentication and orchestration for AWS Kubernetes, OpenSearch, and IAM</li>
+                    <li>Developed dashboards, alerts, and monitoring tools for data performance</li>
+                    <li>Leveraged DevOps practices to maintain high application availability and rapid deployment cycles</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="experience-title">Software Engineer II</div>
+                        <div class="experience-company">Cisco</div>
+                    </div>
+                    <div class="experience-date">Nov 2020 - Oct 2023</div>
+                </div>
+                <div class="experience-location">Chennai, India</div>
+                <ul>
+                    <li>Design and development of Data Streaming Application based on SpringBoot + Kafka</li>
+                    <li>Handling auth and orchestration of AWS Kubernetes + OpenSearch and IAM</li>
+                    <li>Monitoring and handling data in Elastic Stack/OpenSearch</li>
+                    <li>CI/CD DevOps handling for metrics application</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="experience-title">Software Engineer</div>
+                        <div class="experience-company">Cisco</div>
+                    </div>
+                    <div class="experience-date">Aug 2020 - Nov 2020</div>
+                </div>
+                <div class="experience-location">Chennai, India</div>
+                <ul>
+                    <li>Complete design and development of Automation portal using Cypress, Docker and Jenkins</li>
+                    <li>Publishing and presentation of visually appealing dashboards in Grafana</li>
+                    <li>Worked on Angular for development of a WAP (Angular 11)</li>
+                    <li>Implemented Webex SDK for calling, messaging and screen-sharing</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="experience-title">Software Engineering Intern</div>
+                        <div class="experience-company">Cisco</div>
+                    </div>
+                    <div class="experience-date">Jan 2020 - Jun 2020</div>
+                </div>
+                <div class="experience-location">Chennai, India</div>
+                <ul>
+                    <li>Developed and published a Python library (GraphReport) for Jenkins logs and metrics</li>
+                    <li>Worked on MongoDB backend for team applications</li>
+                    <li>Trained on SIP, VoIP, and networking architecture</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="experience-title">Project Intern</div>
+                        <div class="experience-company">Gmetri</div>
+                    </div>
+                    <div class="experience-date">Dec 2018 - Jan 2019</div>
+                </div>
+                <div class="experience-location">Bengaluru, India</div>
+                <ul>
+                    <li>Worked on Hapi.js, GraphQL, and Swagger UI for creating backend and APIs</li>
+                    <li>Developed solutions for VR/AR-based products</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="experience-title">Data Analyst Intern</div>
+                        <div class="experience-company">EISystems Technologies</div>
+                    </div>
+                    <div class="experience-date">Jun 2018 - Jul 2018</div>
+                </div>
+                <div class="experience-location">IIT-BHU, India</div>
+                <ul>
+                    <li>Worked on ML libraries for churn modeling of banking datasets</li>
+                    <li>Designed face detection module for the organization</li>
+                </ul>
+            </div>
         </div>
-        <div class="skill">
-            <img src="confluence.png" alt="Skill 2">
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="container">
+        <h2 class="section-title">Technical Expertise</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon"><img src="java.png" alt="Java"></div>
+                <div class="skill-name">Java 21+</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><img src="spring.png" alt="Spring Boot"></div>
+                <div class="skill-name">Spring Boot</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon text-icon">⚡</div>
+                <div class="skill-name">Next.js 16+</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon text-icon">⚛️</div>
+                <div class="skill-name">React 19</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon text-icon">🎨</div>
+                <div class="skill-name">Tailwind CSS</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><img src="kafka.png" alt="Kafka"></div>
+                <div class="skill-name">Kafka</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><img src="kubernetes.png" alt="Kubernetes"></div>
+                <div class="skill-name">Kubernetes</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><img src="docker.png" alt="Docker"></div>
+                <div class="skill-name">Docker</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><img src="elasticsearch.png" alt="Elasticsearch"></div>
+                <div class="skill-name">Elasticsearch</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><img src="opensearch.png" alt="OpenSearch"></div>
+                <div class="skill-name">OpenSearch</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><img src="grafana.png" alt="Grafana"></div>
+                <div class="skill-name">Grafana</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><img src="prometheus.png" alt="Prometheus"></div>
+                <div class="skill-name">Prometheus</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><img src="jenkins.png" alt="Jenkins"></div>
+                <div class="skill-name">Jenkins</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><img src="github.png" alt="GitHub"></div>
+                <div class="skill-name">GitHub</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><img src="flink.png" alt="Apache Flink"></div>
+                <div class="skill-name">Apache Flink</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><img src="python.png" alt="Python"></div>
+                <div class="skill-name">Python</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><img src="graphqk.png" alt="GraphQL"></div>
+                <div class="skill-name">GraphQL</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><img src="postman.png" alt="Postman"></div>
+                <div class="skill-name">Postman</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><img src="intellij.png" alt="IntelliJ"></div>
+                <div class="skill-name">IntelliJ IDEA</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><img src="vscode.png" alt="VS Code"></div>
+                <div class="skill-name">VS Code</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><img src="jira.png" alt="Jira"></div>
+                <div class="skill-name">Jira</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><img src="confluence.png" alt="Confluence"></div>
+                <div class="skill-name">Confluence</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><img src="nginx.png" alt="Nginx"></div>
+                <div class="skill-name">Nginx</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><img src="helmchart.png" alt="Helm"></div>
+                <div class="skill-name">Helm</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><img src="wireshark.png" alt="Wireshark"></div>
+                <div class="skill-name">Wireshark</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><img src="iceberg.png" alt="Apache Iceberg"></div>
+                <div class="skill-name">Apache Iceberg</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><img src="aws.png" alt="AWS"></div>
+                <div class="skill-name">AWS</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon text-icon">☁️</div>
+                <div class="skill-name">Google Cloud (GCP)</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon text-icon">📞</div>
+                <div class="skill-name">Asterisk PBX</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon text-icon">💾</div>
+                <div class="skill-name">Redis</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon text-icon">🤖</div>
+                <div class="skill-name">LLM Integration</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon text-icon">🧠</div>
+                <div class="skill-name">RAG Systems</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon text-icon">🤗</div>
+                <div class="skill-name">Hugging Face</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon text-icon">🔧</div>
+                <div class="skill-name">Ollama LLM</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon text-icon">🛡️</div>
+                <div class="skill-name">Enterprise Security</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon text-icon">📋</div>
+                <div class="skill-name">Audit Logging</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon text-icon">🔐</div>
+                <div class="skill-name">PII Masking</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon text-icon">🌍</div>
+                <div class="skill-name">Data Sovereignty</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon text-icon">🔄</div>
+                <div class="skill-name">REST APIs</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon text-icon">🗄️</div>
+                <div class="skill-name">PostgreSQL</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon text-icon">🚀</div>
+                <div class="skill-name">Vercel Deploy</div>
+            </div>
         </div>
-        <div class="skill">
-            <img src="jira.png" alt="Skill 3">
-        </div>
-        <div class="skill">
-            <img src="kafka.png" alt="Skill 4">
-        </div>
-        <div class="skill">
-            <img src="elasticsearch.png" alt="Skill 5">
-        </div>
-        <div class="skill">
-            <img src="opensearch.png" alt="Skill 6">
-        </div>
-        <div class="skill">
-            <img src="docker.png" alt="Skill 5">
-        </div>
-        <div class="skill">
-            <img src="flink.png" alt="Skill 5">
-        </div>
-        <div class="skill">
-            <img src="github.png" alt="Skill 5">
-        </div>
-        <div class="skill">
-            <img src="graphqk.png" alt="Skill 5">
-        </div>
-        <div class="skill">
-            <img src="iceberg.png" alt="Skill 5">
-        </div>
-        <div class="skill">
-            <img src="intellij.png" alt="Skill 5">
-        </div>
-        <div class="skill">
-            <img src="java.png" alt="Skill 5">
-        </div>
-        <div class="skill">
-            <img src="kubernetes.png" alt="Skill 5">
-        </div>
-        <div class="skill">
-            <img src="nginx.png" alt="Skill 5">
-        </div>
-        <div class="skill">
-            <img src="spring.png" alt="Skill 5">
-        </div>
-        <div class="skill">
-            <img src="vscode.png" alt="Skill 5">
-        </div>
-        <div class="skill">
-            <img src="python.png" alt="Skill 5">
-        </div>
-        <div class="skill">
-            <img src="prometheus.png" alt="Skill 5">
-        </div>
-        <div class="skill">
-            <img src="postman.png" alt="Skill 5">
-        </div>
-        <div class="skill">
-            <img src="jenkins.png" alt="Skill 5">
-        </div>
-        <div class="skill">
-            <img src="html.png" alt="Skill 5">
-        </div>
-        <div class="skill">
-            <img src="wireshark.png" alt="Skill 5">
-        </div>
-        <div class="skill">
-            <img src="grafana.png" alt="Skill 5">
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="projects" class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-icon">🔐</div>
+                <div class="project-title">AI IAM Gateway</div>
+                <div class="project-subtitle">Enterprise-Grade Secure RAG Platform</div>
+                <p class="project-description">
+                    A comprehensive IAM-based secure Retrieval Augmented Generation system with enterprise-level security, auditing, and real-time analytics. Built with modern cloud-native architecture featuring zero-trust security principles, advanced PII handling, and complete data sovereignty.
+                </p>
+                <ul class="project-features">
+                    <li>Enterprise IAM Integration & RBAC</li>
+                    <li>Secure RAG with LLM Orchestration</li>
+                    <li>Real-time Analytics Dashboard</li>
+                    <li>Comprehensive Audit Logging</li>
+                    <li>PII Masking & Data Protection</li>
+                    <li>Data Sovereignty Compliance</li>
+                </ul>
+                <div class="project-tech">
+                    <span class="tech-tag">Spring Boot</span>
+                    <span class="tech-tag">Next.js</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                    <span class="tech-tag">Mistral LLM</span>
+                    <span class="tech-tag">RAG</span>
+                    <span class="tech-tag">Java 21</span>
+                    <span class="tech-tag">Tailwind CSS</span>
+                    <span class="tech-tag">Vercel</span>
+                </div>
+                <a href="https://ai-iam-gateway.vercel.app/" target="_blank" class="project-link">🚀 Live Demo</a>
+            </div>
         </div>
 
-
-    <div class="skill">
-            <img src="notepad.png" alt="Skill 5">
+        <div class="ai-skills-highlight">
+            <h3>🤖 AI & LLM Expertise from Featured Projects</h3>
+            <p style="color: var(--text-muted); margin-bottom: 1rem;">Hands-on experience with modern AI/ML frameworks, LLM integration, and enterprise security patterns</p>
         </div>
-        <div class="skill">
-            <img src="restful.png" alt="Skill 5">
+    </section>
+
+    <!-- Certifications & Awards Section -->
+    <section class="container">
+        <h2 class="section-title">Certifications & Recognition</h2>
+        <div class="cert-grid">
+            <div class="cert-card">
+                <div class="cert-icon">🏆</div>
+                <div class="cert-title">WxCalling 2021 Automation Hackathon</div>
+                <div class="cert-description">Solved critical process issues and automated solutions using Cypress and Docker</div>
+            </div>
+            <div class="cert-card">
+                <div class="cert-icon">🛡️</div>
+                <div class="cert-title">Security - Brown Belt</div>
+                <div class="cert-description">Cisco Security Certification - Brown Belt Level</div>
+            </div>
+            <div class="cert-card">
+                <div class="cert-icon">☁️</div>
+                <div class="cert-title">AWS for Developers</div>
+                <div class="cert-description">Learning Amazon Web Services (AWS) for Developers (2020)</div>
+            </div>
+            <div class="cert-card">
+                <div class="cert-icon">🤖</div>
+                <div class="cert-title">Machine Learning with TensorFlow</div>
+                <div class="cert-description">End-to-End Machine Learning with TensorFlow on GCP</div>
+            </div>
+            <div class="cert-card">
+                <div class="cert-icon">⚙️</div>
+                <div class="cert-title">Kubernetes Solutions</div>
+                <div class="cert-description">Kubernetes Solutions - Handling and Optimizing</div>
+            </div>
+            <div class="cert-card">
+                <div class="cert-icon">🌩️</div>
+                <div class="cert-title">Professional Cloud Developer</div>
+                <div class="cert-description">Google Cloud Certification - Professional Cloud Developer</div>
+            </div>
         </div>
-        <div class="skill">
-            <img src="helmchart.png" alt="Skill 5">
+    </section>
+
+    <!-- Publications Section -->
+    <section class="container">
+        <h2 class="section-title">Publications & Patents</h2>
+        <div class="cert-grid">
+            <div class="cert-card">
+                <div class="cert-icon">📄</div>
+                <div class="cert-title">Medicine Identification Application</div>
+                <div class="cert-description">An Optimal Medicine Identification Application Based on Deep Neural Network</div>
+            </div>
+            <div class="cert-card">
+                <div class="cert-icon">📋</div>
+                <div class="cert-title">Cloud Traffic Patent</div>
+                <div class="cert-description">Submitted a patent in CPOL for handling cloud traffic of calling in emergency scenarios</div>
+            </div>
         </div>
-        <!-- Add more images as needed -->
-    </div>
-        </section>
+    </section>
 
- 
+    <!-- Education & Volunteer Section -->
+    <section class="container">
+        <h2 class="section-title">Education & Community</h2>
+        <div class="cert-grid">
+            <div class="cert-card">
+                <div class="cert-icon">🎓</div>
+                <div class="cert-title">SRM University</div>
+                <div class="cert-description">Bachelor of Technology (BTech) in Computer Science and Engineering (2016-2020) | Organiser of College Events and Multiple Hackathons</div>
+            </div>
+            <div class="cert-card">
+                <div class="cert-icon">🏫</div>
+                <div class="cert-title">Sunbeam School</div>
+                <div class="cert-description">High School Education (2003-2015)</div>
+            </div>
+            <div class="cert-card">
+                <div class="cert-icon">🎤</div>
+                <div class="cert-title">Community Leadership</div>
+                <div class="cert-description">Organizer of Hackference India - DevRel | Volunteer @ GDG Chennai, FnPlus, PyConIndia, TFUG Chennai | MLH Mentor</div>
+            </div>
+        </div>
+    </section>
 
-        <section class="section honors">
-            <h2>Honors & Awards</h2>
-            <ul>
-                <li>WxCalling 2021 Automation Hackathon
-                <p class="job-details">We solved the existing problem by fixing two processes(Api Failures & Password
-Rotation) and automating it using Cypress and Docker</p></li><p>
-               
-                <li>Datathon 2024</li>
-                 <p class="job-details">
-                Built a RAG pipeline for a chatbot for Webex using LLM models to help engineer debug any 2am fix </p>
-                 <li>Security - Brown Belt Cisco</li><p>
-                <li>Kubernetes Solution -Qwiklabs</li>
-            </ul>
-        </section>
+    <!-- Contact Section -->
+    <section id="contact" class="container">
+        <div class="contact-section">
+            <h2 class="section-title">Let's Connect</h2>
+            <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 2rem;">
+                I'm always interested in hearing about interesting projects and opportunities. Feel free to reach out!
+            </p>
+            <div class="contact-links">
+                <a href="mailto:mishra.vaibhav6@gmail.com" class="contact-link">
+                    <span>📧</span>
+                    <span>mishra.vaibhav6@gmail.com</span>
+                </a>
+                <a href="https://www.linkedin.com/in/vaibhav-m-0baaa2b9" class="contact-link" target="_blank">
+                    <span>💼</span>
+                    <span>LinkedIn Profile</span>
+                </a>
+                <a href="tel:+918542098418" class="contact-link">
+                    <span>📱</span>
+                    <span>+91 8542098418</span>
+                </a>
+            </div>
+        </div>
+    </section>
 
-        <section class="section publications">
-            <h2>Publications</h2>
-            <ul>
-                <li>An Optimal Medicine Identification Application Based on Deep Neural Network</li>
-                                <li>Submitted a patent in CPOL for handling cloud traffic of calling in emergency scenario</li>
-            </ul>
-        </section>
-
-        <section class="section education">
-        <h2>Volunteer</h2>
-        <p>Organiser of Hackference India -Devrel </p>
-        <p>Volunteer @ GDG Chennai,FnPlus,PyconIndia ,TFUG Chennai</p>
-        <p>Mentor @ MLH(Major League Hacking)
-
-            <h2>Education</h2>
-            <p>SRM University - Bachelor of Technology (BTech) in Computer Science and Engineering</p>
-            - Organiser of College events(TEXUS) and multiple Hackathons
-            <p>Sunbeam - High School (2003 - 2015)</p>
-        </section>
-    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Vaibhav Mishra. Crafted with <span style="color: var(--secondary);">❤</span> and <span style="color: var(--primary);">code</span>.</p>
+            <p style="font-size: 0.9rem; margin-top: 1rem;">Always Learning • Always Building • Always Growing</p>
+        </div>
+    </footer>
 
 </body>
 </html>
