@@ -313,11 +313,15 @@
         section:nth-child(4) { animation-delay: 0.3s; }
 
         .section-title {
-            font-size: 3rem;
+            font-size: 2.2rem;
             font-weight: 800;
             margin-bottom: 3rem;
             position: relative;
             text-align: center;
+            word-break: break-word;
+            white-space: normal;
+            width: 100%;
+            overflow-wrap: anywhere;
         }
 
         .section-title::after {
@@ -357,8 +361,7 @@
         .experience-timeline::before {
             content: '';
             position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
+            left: 20px;
             width: 2px;
             height: 100%;
             background: linear-gradient(180deg, var(--primary), var(--accent), transparent);
@@ -366,7 +369,7 @@
 
         .experience-item {
             margin-bottom: 3rem;
-            padding: 2rem;
+            padding: 2rem 2rem 2rem 4.5rem;
             background: linear-gradient(135deg, var(--surface) 0%, rgba(0, 212, 255, 0.03) 100%);
             border-radius: 15px;
             border: 1px solid var(--border);
@@ -384,7 +387,7 @@
         .experience-item::before {
             content: '';
             position: absolute;
-            left: calc(50% - 15px);
+            left: 7px;
             top: 2rem;
             width: 30px;
             height: 30px;
@@ -782,9 +785,34 @@
 
         /* Responsive */
         @media (max-width: 768px) {
+                .section-title {
+                    font-size: 1.4rem !important;
+                    padding: 0 0.5rem;
+                    letter-spacing: 0;
+                    white-space: normal !important;
+                    word-break: break-word !important;
+                    overflow-wrap: anywhere !important;
+                    width: 100% !important;
+                    max-width: 100vw;
+                    text-align: center;
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+            .nav-container {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+                padding: 1rem 1rem 0.5rem 1rem;
+            }
+            .nav-logo {
+                margin-bottom: 0.5rem;
+                margin-right: 0;
+            }
             .nav-links {
                 gap: 1rem;
                 font-size: 0.9rem;
+                width: 100%;
+                justify-content: flex-start;
             }
 
             .hero h1 {
@@ -795,27 +823,35 @@
                 font-size: 1.3rem;
             }
 
+            /* Experience Timeline: move dot/line to left, not center */
             .experience-timeline::before {
-                left: 30px;
-            }
-
-            .experience-item::before {
                 left: 20px;
+                transform: none;
             }
-
+            .experience-item::before {
+                left: -15px;
+                top: 2rem;
+            }
             .experience-item {
-                margin-left: 80px;
-                border-left-width: 0;
-                border-top: 4px solid var(--primary);
+                margin-left: 40px;
+                border-left: 4px solid var(--primary);
+                border-top: none;
+                border-radius: 15px;
+                padding-left: 2rem;
             }
-
             .experience-item:hover {
-                border-top-color: var(--accent);
+                border-left-color: var(--accent);
+                border-top: none;
             }
 
+            /* Skills grid: center align */
             .skills-grid {
-                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+                grid-template-columns: repeat(2, 1fr);
                 gap: 1rem;
+                justify-items: center;
+            }
+            .skill-card {
+                margin: 0 auto;
             }
 
             section {
@@ -824,6 +860,11 @@
 
             .about {
                 padding: 2rem;
+            }
+
+            /* Contact section header spacing */
+            #contact {
+                scroll-margin-top: 90px;
             }
         }
     </style>
