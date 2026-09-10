@@ -17,6 +17,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script>try{const t=localStorage.getItem('portfolio-theme');if(t==='dark'||(!t&&matchMedia('(prefers-color-scheme:dark)').matches))document.documentElement.dataset.theme='dark'}catch(e){}</script>
   <link rel="stylesheet" href="style.css">
   <title>Vaibhav Mishra — Founder & Senior Software Engineer</title>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Vaibhav Mishra","url":"https://vaibhav-portfolio.vercel.app/","image":"https://vaibhav-portfolio.vercel.app/photo.jpg","jobTitle":"Senior Software Engineer","worksFor":{"@type":"Organization","name":"Five9"},"alumniOf":{"@type":"CollegeOrUniversity","name":"SRM University"},"sameAs":["https://www.linkedin.com/in/vaibhav-m-0baaa2b9","https://github.com/vaibhav-mishra"],"knowsAbout":["Distributed systems","Java","Spring Boot","Apache Kafka","Kubernetes","Cloud architecture","Large language models","Enterprise security"]}</script>
@@ -25,11 +26,14 @@
   <a class="skip" href="#main">Skip to content</a>
   <header class="site-header">
     <a class="brand" href="#top" aria-label="Vaibhav Mishra, home"><span>VM</span><span class="brand-copy">Vaibhav Mishra<small>Founder · Engineer</small></span></a>
-    <button class="menu-button" aria-expanded="false" aria-controls="site-nav">Menu</button>
-    <nav id="site-nav" aria-label="Primary navigation">
-      <a href="#work">Work</a><a href="#experience">Experience</a><a href="#about">About</a>
-      <a class="nav-cta" href="mailto:mishra.vaibhav6@gmail.com">Start a conversation <span>↗</span></a>
-    </nav>
+    <div class="header-actions">
+      <nav id="site-nav" aria-label="Primary navigation">
+        <a href="#work">Work</a><a href="#experience">Experience</a><a href="#about">About</a>
+        <a class="nav-cta" href="mailto:mishra.vaibhav6@gmail.com">Start a conversation <span>↗</span></a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode"><span class="sun" aria-hidden="true">☀</span><span class="moon" aria-hidden="true">☾</span></button>
+      <button class="menu-button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    </div>
   </header>
 
   <main id="main">
